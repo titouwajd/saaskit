@@ -12,7 +12,7 @@ const stats = [
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-white via-purple-50/40 to-white pt-24 pb-16 lg:pt-40 lg:pb-24">
+    <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-purple-50/60 to-white pt-24 pb-16 lg:pt-40 lg:pb-24">
       {/* Background decorations */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-16 left-10 h-64 w-64 rounded-full bg-primary/5 blur-3xl" />
@@ -60,7 +60,7 @@ export function Hero() {
               asChild
               className="w-full sm:w-auto"
             >
-              <Link href="#demo">
+              <Link href="/demo">
                 <Play className="mr-2 h-4 w-4" />
                 Voir la démo
               </Link>
@@ -72,7 +72,7 @@ export function Hero() {
             {stats.map((s) => (
               <div
                 key={s.label}
-                className="flex flex-col items-center gap-1 rounded-xl border border-border/60 bg-white/50 backdrop-blur-sm px-4 py-4 shadow-sm"
+                className="flex flex-col items-center gap-1 rounded-xl border border-border bg-white px-4 py-4 shadow-md"
               >
                 <s.icon className="h-5 w-5 text-primary/70" />
                 <span className="text-2xl font-bold text-foreground sm:text-3xl">
